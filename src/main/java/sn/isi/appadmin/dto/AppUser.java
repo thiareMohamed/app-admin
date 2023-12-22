@@ -1,10 +1,10 @@
-package sn.isi.adminapp.dto;
+package sn.isi.appadmin.dto;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.antlr.v4.runtime.misc.NotNull;
 
 import java.util.List;
 
