@@ -12,7 +12,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class AppRoles {
-    private Long id;
+    private int id;
     @NotNull
     private String name;
 }

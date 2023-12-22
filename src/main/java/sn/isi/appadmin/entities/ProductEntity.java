@@ -15,7 +15,7 @@ import lombok.ToString;
 public class ProductEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     @Column(length = 100, nullable = false, unique = true)
     private String ref;
     private String name;

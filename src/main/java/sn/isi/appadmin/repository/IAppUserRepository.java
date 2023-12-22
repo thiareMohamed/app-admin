@@ -1,7 +1,10 @@
-package sn.isi.adminapp.repository;
+package sn.isi.appadmin.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import sn.isi.appadmin.entities.AppUserEntity;
 
-public interface IAppUserRepository extends JpaRepository<sn.isi.adminapp.entities.AppUserEntity, Long> {
-    public sn.isi.adminapp.entities.AppUserEntity findByEmail(String email);
+@Repository
+public interface IAppUserRepository extends JpaRepository<AppUserEntity, Integer> {
+    public AppUserEntity findByEmail(String email);
 }

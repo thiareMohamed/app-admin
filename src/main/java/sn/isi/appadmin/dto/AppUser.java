@@ -14,7 +14,7 @@ import java.util.List;
 @ToString
 public class AppUser {
 
-    private Long id;
+    private int id;
     @NotNull
     private String fistName;
     @NotNull

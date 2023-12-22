@@ -16,7 +16,7 @@ import java.util.List;
 public class AppUserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     @Column(length = 150, nullable = false)
     private String fistName;
     @Column(length = 150, nullable = false)

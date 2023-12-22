@@ -12,7 +12,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class Product {
-    private Long id;
+    private int id;
     @NotNull
     private String ref;
     private String name;

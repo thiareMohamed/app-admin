@@ -1,7 +1,10 @@
-package sn.isi.adminapp.repository;
+package sn.isi.appadmin.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import sn.isi.appadmin.entities.ProductEntity;
 
-public interface IProductRepository extends JpaRepository<sn.isi.adminapp.entities.ProductEntity, Long> {
+@Repository
+public interface IProductRepository extends JpaRepository<ProductEntity, Integer> {
 
 }
