@@ -6,5 +6,5 @@ import sn.isi.appadmin.entities.AppRolesEntity;
 
 @Repository
 public interface IAppRolesRepository extends JpaRepository<AppRolesEntity, Integer> {
-    public AppRolesEntity findByRoleName(String roleName);
+    public AppRolesEntity findByName(String roleName);
 }

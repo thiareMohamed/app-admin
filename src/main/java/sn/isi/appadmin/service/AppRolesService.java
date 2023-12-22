@@ -27,6 +27,10 @@ public class AppRolesService {
         this.messageSource = messageSource;
     }
 
+    public AppRolesService() {
+
+    }
+
     @Transactional
     public List<AppRoles> getAppRoles() {
         return StreamSupport.stream(iAppRolesRepository.findAll().spliterator(), false)
