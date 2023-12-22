@@ -1,4 +1,4 @@
-package sn.isi.adminapp.entities;
+package sn.isi.appadmin.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -29,7 +29,7 @@ public class AppUserEntity {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private List<AppRoles> appRoles;
+    private List<AppRolesEntity> appRoles;
     @OneToMany(mappedBy = "appUser")
-    private List<Product> products;
+    private List<ProductEntity> products;
 }

@@ -1,4 +1,4 @@
-package sn.isi.adminapp.entities;
+package sn.isi.appadmin.entities;
 
 
 import jakarta.persistence.*;
@@ -22,5 +22,5 @@ public class ProductEntity {
     private int quantity;
 
     @ManyToOne
-    private AppUser appUser;
+    private AppUserEntity appUser;
 }

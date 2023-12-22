@@ -1,4 +1,4 @@
-package sn.isi.adminapp.entities;
+package sn.isi.appadmin.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -21,5 +21,5 @@ public class AppRolesEntity {
     private String name;
 
     @ManyToMany(mappedBy = "appRoles")
-    private List<AppUser> appUsers;
+    private List<AppUserEntity> appUsers;
 }
